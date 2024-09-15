@@ -1,4 +1,9 @@
 package com.bank.user_service.dto;
 
-public class Error {
+import lombok.Data;
+
+@Data
+public class Error<T> {
+    private T errorCode;
+    private Object msg;
 }

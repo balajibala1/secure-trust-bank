@@ -24,12 +24,8 @@ import java.util.stream.Collectors;
 
 @Component
 public class JwtFilter extends OncePerRequestFilter {
-    private final ValidateToken validateToken;
-
     @Autowired
-    public JwtFilter(ValidateToken validateToken) {
-        this.validateToken = validateToken;
-    }
+    public ValidateToken validateToken;
 
     @Autowired
     @Qualifier("handleExceptionResolver")
