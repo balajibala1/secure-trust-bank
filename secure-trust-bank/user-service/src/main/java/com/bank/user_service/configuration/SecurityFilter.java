@@ -1,6 +1,6 @@
 package com.bank.user_service.configuration;
 
-import com.bank.authorization.security.config.JwtFilter;
+import com.bank.authorization.security.JwtFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

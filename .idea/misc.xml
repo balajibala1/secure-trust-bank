@@ -5,9 +5,13 @@
       <list>
         <option value="$PROJECT_DIR$/secure-trust-bank/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/secure-trust-bank/user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/secure-trust-bank/authorization/pom.xml" />
         <option value="$PROJECT_DIR$/secure-trust-bank/account-service/pom.xml" />
         <option value="$PROJECT_DIR$/secure-trust-bank/service-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/secure-trust-bank/credit-card-service/pom.xml" />
+        <option value="$PROJECT_DIR$/secure-trust-bank/transaction-credit-card-service/pom.xml" />
+        <option value="$PROJECT_DIR$/secure-trust-bank/transaction-online-banking-service/pom.xml" />
+        <option value="$PROJECT_DIR$/secure-trust-bank/auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/secure-trust-bank/authorization/pom.xml" />
       </list>
     </option>
   </component>

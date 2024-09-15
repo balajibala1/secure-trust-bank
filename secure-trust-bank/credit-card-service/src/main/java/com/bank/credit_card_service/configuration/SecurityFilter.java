@@ -1,6 +1,6 @@
 package com.bank.credit_card_service.configuration;
 
-import com.bank.authorization.security.config.JwtFilter;
+import com.bank.authorization.security.JwtFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;

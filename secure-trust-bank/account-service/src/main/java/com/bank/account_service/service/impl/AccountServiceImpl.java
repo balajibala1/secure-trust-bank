@@ -9,6 +9,7 @@ import com.bank.account_service.model.Account;
 import com.bank.account_service.model.ProspectApplication;
 import com.bank.account_service.repository.*;
 import com.bank.account_service.service.AccountService;
+import com.bank.authorization.security.ValidateToken;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +20,6 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
-import com.bank.authorization.security.config.*;
 @Service
 @Slf4j
 @RequiredArgsConstructor

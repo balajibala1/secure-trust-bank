@@ -1,5 +1,6 @@
 package com.bank.credit_card_service.service.impl;
 
+import com.bank.authorization.security.ValidateToken;
 import com.bank.credit_card_service.dto.CreditCardDto;
 import com.bank.credit_card_service.exception.*;
 import com.bank.credit_card_service.model.CreditCard;
@@ -10,7 +11,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.stereotype.Service;
-import com.bank.authorization.security.config.*;
 
 import java.time.LocalDate;
 import java.util.Optional;

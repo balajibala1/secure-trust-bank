@@ -5,6 +5,7 @@ import com.bank.account_service.exception.AccountNotPresentException;
 import com.bank.account_service.exception.AlreadyAppliedException;
 import com.bank.account_service.model.Account;
 import com.bank.account_service.service.AccountService;
+import com.bank.authorization.security.ValidateToken;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import com.bank.authorization.security.config.*;
+
 
 import java.util.List;
 
