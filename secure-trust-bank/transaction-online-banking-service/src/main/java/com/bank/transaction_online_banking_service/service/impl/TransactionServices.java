@@ -7,10 +7,8 @@ import com.bank.transaction_online_banking_service.model.Transaction;
 import com.bank.transaction_online_banking_service.model.TransactionDetails;
 import com.bank.transaction_online_banking_service.repository.*;
 import com.bank.transaction_online_banking_service.repository.TransactionDetailsRepository;
-import com.bank.transaction_online_banking_service.service.TransactionSummaryService;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +22,6 @@ import java.util.List;
 
 
 @AllArgsConstructor
-@Slf4j
 @Service
 public class TransactionServices {
 
@@ -38,8 +35,8 @@ public class TransactionServices {
     private AccountService accountService;
     @Autowired
     private Validator validator;
+    private static final Logger logger = LoggerFactory.getLogger(TransactionServices.class);
 
-    Logger logger = LoggerFactory.getLogger(TransactionServices.class);
 
     public ScheduledTransaction scheduleFundTransfer(ScheduledTransactionDto scheduledTransaction) {
         logger.info("ScheduleFundTransfer method starts");

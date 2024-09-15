@@ -22,7 +22,7 @@ import java.time.LocalDate;
 public class ProspectApplication {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO,generator ="application_id")
-    @GenericGenerator(name="application_id",strategy = "com.bankapplication.creditcardservice.model.ApplicationNumberGenerator")
+    @GenericGenerator(name="application_id",strategy = "com.bank.credit_card_service.model.ApplicationNumberGenerator")
     private String applicationNumber;
     private String status;
     private String user;

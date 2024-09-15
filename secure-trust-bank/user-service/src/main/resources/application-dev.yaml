@@ -1,0 +1,46 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/bank
+    username: root
+    password: 1312
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      CREDIT-SERVICE:
+        registerHealthIndicator: true
+        failureRateThreshold: 50
+        event-consumer-buffer-size: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+
+
+logging:
+  file:
+    path: C:/Users/BALAJIBALA/Downloads/user-service/user-service/src/main/resources/log/
+
+
+approved: APPROVED
+pending: PENDING
+rejected: REJECTED

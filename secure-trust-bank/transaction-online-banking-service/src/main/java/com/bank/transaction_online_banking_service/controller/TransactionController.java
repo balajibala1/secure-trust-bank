@@ -54,7 +54,7 @@ public class TransactionController {
     @Autowired
     @Qualifier("immediateFundTransferTransactionServiceImpl")
     private FundTransferTransactionService immediateFundTransferTransactionService;
-    Logger logger = LoggerFactory.getLogger(TransactionController.class);
+    private static final Logger logger = LoggerFactory.getLogger(TransactionServices.class);
     @PostMapping("/deposit")
     @PreAuthorize("hasAuthority('USER')")
     @CircuitBreaker(name = "fall-back", fallbackMethod = "fallbackMethod")

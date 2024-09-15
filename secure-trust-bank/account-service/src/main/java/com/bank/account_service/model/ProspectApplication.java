@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class ProspectApplication {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO,generator ="application_id")
-    @GenericGenerator(name="application_id",strategy = "com.onlinebanking.accountservice.entity.ApplicationNumberGenerator")
+    @GenericGenerator(name="application_id",strategy = "com.bank.account_service.model.ApplicationNumberGenerator")
     private String applicationNumber;
     private String status;
     private String user;
